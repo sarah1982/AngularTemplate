@@ -1,0 +1,23 @@
+
+
+<input type="radio" id="mob" name="nav-tab" checked (click)="colorActiveTab('mob')">
+<input type="radio" id="ui" name="nav-tab" (click)="colorActiveTab('ui')">
+<input type="radio" id="web" name="nav-tab" (click)="colorActiveTab('web')">
+<div class="tabs btn">
+  <ul class="ulist">
+    <li id="listmob"><label for="mob"><a>Mobile Apps</a></label></li>
+    <li id="listui"><label for="ui"><a>UI/UX Design</a></label></li>
+    <li id="listweb" ><label for="web"><a>Website</a></label></li>
+  </ul>
+</div>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane content-mob">
+    {{tabText}}
+  </div>
+  <div class="tab-pane content-ui ">{{tabSecondText}}</div>
+  <div class="tab-pane content-web">{{tabText}}</div>
+</div>
+
+

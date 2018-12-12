@@ -1,0 +1,28 @@
+input[type="radio"], .tab-pane { display: none; }
+
+/* the magic */
+#mob:checked ~ .tab-content > .content-mob,
+#ui:checked ~ .tab-content > .content-ui,
+#web:checked ~ .tab-content > .content-web
+ {
+  display: block;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 32px;
+  background-image:linear-gradient(#7FB2EE,#fff) ;
+}
+
+
+
+.btn{
+    background: rgba(252,252,252,0.80);
+    background: rgba(255,255,255,0.50);
+    font-family: Copperplate-Bold;
+    font-size: 13px;
+    color: #8F8E94;
+    letter-spacing: -0.08px;
+    text-align: center;
+}
+
+
